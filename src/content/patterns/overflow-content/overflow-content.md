@@ -7,7 +7,7 @@ title: Overflow content
 
 ## Truncation
 
-Truncation, or shortening, is typically used for static text or links that exceed the size of their container. Truncated items are represented by an ellipsis `...` and should represent three or more truncated characters in a text string. There must be at least four characters of non-truncated content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipsis is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.
+Truncation, or shortening, is typically used for static text or links that exceed the size of their container. The characters which have been truncated are represented by an ellipsis. Be sure use the ellipses character "…" (`&hellip;` or `&#0133;` or `U+2026`) and not three separate 'dots'. An ellipses should represent three or more truncated characters in a text string. There must be at least four characters of non-truncated content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipsis is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.
 
 ![Example of a browser tooltip being used for truncation.](images/BrowserTooltip.png)
 _Example of a browser tooltip being used for truncation._
@@ -35,9 +35,9 @@ There are three types of truncation: front-line, mid-line, and end-line.
 
 | Type          | Purpose                                                                                                                                                                                                                        | Default                       | Truncated                   |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | --------------------------- |
-| **Front-line** | Used at the beginning of a text string to indicate the text is continued from a previous location.                                                                                                                             | `123456789`                   | ...56789                    |
-| **Mid-line**   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234...5678` `9876...4321` |
-| **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
+| **Front-line** | Used at the beginning of a text string to indicate the text is continued from a previous location.                                                                                                                             | `123456789`                   | …56789                    |
+| **Mid-line**   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234…5678` `9876…4321` |
+| **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345…`                  |
 
 An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 
